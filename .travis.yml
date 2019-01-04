@@ -9,5 +9,6 @@ branches:
   only:
   - test-travis
 before_install:
+- nix-env -i openssl
 - openssl aes-256-cbc -K $encrypted_a792dbab8fa9_key -iv $encrypted_a792dbab8fa9_iv
   -in travis.enc -out travis -d
