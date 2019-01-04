@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then
   git config user.name "Travis CI"
   git config user.email "travis@stenci.la"
